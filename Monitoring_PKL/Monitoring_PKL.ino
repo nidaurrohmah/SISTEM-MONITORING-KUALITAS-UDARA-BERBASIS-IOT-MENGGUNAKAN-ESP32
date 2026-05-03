@@ -94,7 +94,7 @@ void sendSensor() {
   Blynk.virtualWrite(V2, ppm);
 
   /* ===== NOTIFIKASI SUHU ===== */
-  if (suhu > 40) {
+  if (suhu > 27) {
     Blynk.logEvent("notifikasi_suhu",
       String("⚠️ Suhu Ruang Server Tinggi: ") + suhu + " °C");
   }
